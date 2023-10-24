@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import './default.css';
+.board{
+  padding:50px 0; 
+  background:#333;
+  color:#fff;
+  text-align:center;
+}
+
+h1{
+  margin-bottom:30px;
+}
+header button{
+  padding:8px 16px;
+  color:#fff; 
+  border:2px solid #fff;
+  cursor:pointer;
+}
+header div{
+  display:flex; justify-content:space-between;
+  width:620px; margin:0 auto;
+}
+.card_wrap{
+  display:flex; flex-wrap:wrap;
+  width: 620px; margin:50px auto;
+}
+.card{
+  width:140px; margin:5px;
+   /* overflow:hidden; */
+  
+}
+.card img{
+  border:2px solid #fff;border-radius:8px;
+
+}
+.card .front{
+  position:absolute;
+  transform:rotateY(90deg);
+  transition:all .3s;
+}
+.card .back{
+  cursor:pointer;
+  transition:all .3s;
+}
+.flipped .front{
+  transform:rotateY(0deg);
+  transition-delay:.2s;
+}
+.flipped .back{
+  transform:rotateY(-90deg);
+  /* transition-delay:.2s; */
+}

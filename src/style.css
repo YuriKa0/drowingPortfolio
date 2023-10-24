@@ -1,0 +1,158 @@
+@import 'default.css';
+
+@font-face {
+  font-family: 'HSYuji-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'drfont_daraehand';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/drfont_daraehand.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html,body{
+  font-size:16px;
+}
+h1{
+  font-family:'HSYuji-Regular';
+  font-size:3rem;
+  color:#0d225e;
+}
+h2, h3{
+  display:none;
+}
+
+button{
+  /* text-indent: -9999em; */
+  cursor:pointer;
+}
+.sheet{
+  width:100%; height:auto;
+}
+
+.bg_object{
+  position:absolute; bottom:0;
+  left:0;
+}
+
+nav li:hover .btntext{
+opacity:1;
+}
+nav li .btntext{
+  
+  opacity:0;
+  transition:opacity 0.3s;
+}
+/* about */
+.profile{
+  position:absolute; left:50%; top:120px;
+  transform:translateX(-50%);
+  display:flex; flex-flow:row wrap;
+  /* justify-content:center; */
+  align-items:center; align-content:center;
+  gap:60px 10px;
+  padding-left:130px;
+  width:822px; height:501px;
+  background:url('../public/img/profile.png') no-repeat left top;
+  color:#fff;
+  font-family: 'drfont_daraehand';
+}
+.profile_img{
+  /* flex-basis:50%; */
+}
+dl{
+  font-size:2.25rem;
+}
+dt{
+  display:none;
+}
+.introtext{
+  font-size:2rem;
+}
+.p_about{
+  position:absolute; right:100px; top:200px;
+}
+
+/*  */
+.btns_wrap{
+  position:absolute; left:50%; top:150px;
+  transform:translateX(-50%);
+  width:962px; height:477px;
+}
+.btns_wrap button{
+  position:absolute;
+  
+}
+.frame1{
+   left:0; top:0; 
+}
+.frame2{
+  left:190px; top:15px; 
+}
+.frame3{
+  left:160px; top:165px; 
+}
+.frame4{
+  left:400px; top:15px; 
+}
+.frame5{
+  left:80px; bottom:0px; 
+}
+
+.frame6{
+  right:0; top:0; 
+}
+/*  */
+.toggleList{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%,-50%);
+}
+.mainFrame{
+  position:absolute; left:0; top:0;
+  /* display:none; */
+  width:100%; height:100%;
+  background:transparent;
+}
+.mainFrame img{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%, -50%);
+  padding:40px;
+  background:#fff url('https://cdn-icons-png.flaticon.com/128/2976/2976286.png') no-repeat right 15px top 15px;
+  background-size:15px;
+  box-shadow:0 0 15px #5d5d5d;
+}
+.illust2{
+  height:600px;
+}
+
+/* sheets */
+.toggleList{
+  background:transparent;
+}
+.index_btns{
+  position:absolute; left:50%; bottom:30px;
+  transform:translateX(-50%);
+  display:flex; gap:10px;
+
+}
+.index_btns button{
+  width:15px; height:15px;
+  border-radius:50%;
+  display:block; text-indent:-9999em;
+}
+/* contact */
+
+.snb a{
+  background:url('https://cdn-icons-png.flaticon.com/128/10400/10400895.png') no-repeat;
+}
+.snb .kakao{
+  background-image:url('https://cdn-icons-png.flaticon.com/128/3669/3669973.png');
+}
+.snb .dillyhub{
+  background-image:url('../public/img/dillyhub.svg');
+}
+.snb .blog{
+  background-image:url('../public/img/blog.png');
+}

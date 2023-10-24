@@ -1,0 +1,49 @@
+@import 'default.css';
+
+html,body{
+  font-size:16px;
+}
+h2, h3{
+  display:none;
+}
+/* about */
+.board{
+  position:absolute; left:0; top:0;
+  /* width:300px; height:auto; */
+  cursor:pointer;
+}
+.boardBack{
+  /* position:relative; */
+}
+.p_about{
+  position:absolute; right:100px; top:200px;
+}
+
+.frame1{
+  position:absolute; left:50px; top:200px; cursor:pointer;
+}
+
+.frame2{
+  position:absolute; right:150px; top:100px; cursor:pointer;
+}
+.artbook{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  width:300px; cursor:pointer;
+}
+.work1, .work2{
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%, -50%);
+  padding:40px;
+  background:#fff url('https://cdn-icons-png.flaticon.com/128/2976/2976286.png') no-repeat right 15px top 15px;
+  background-size:15px;
+  box-shadow:0 0 15px #5d5d5d;
+}
+.work2{
+  height:600px;
+}
+.snb{
+  /* position:absolute; left:250px; top:180px;
+  width:600px; height:330px;
+  background:#fcf; */
+}
